@@ -10,7 +10,10 @@ import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext
 import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary";
 import { MuiContentEditable, placeHolderSx } from './styles'
 import { Box } from "@mui/material";
-const theme = {};
+import lexicalEditorTheme from "~/theme/lexicalEditorTheme";
+const theme = {
+    ...lexicalEditorTheme
+};
 
 // When the editor changes, you can get notified via the
 // LexicalOnChangePlugin!
